@@ -8,6 +8,47 @@
 
 ---
 
+## 怎么装
+
+Claude Code skill 装起来很简单，就是把 skill 文件夹丢到 Claude 能找到的目录里。
+
+**全局安装（推荐，所有项目都能用）**
+
+```bash
+mkdir -p ~/.claude/skills
+cd ~/.claude/skills
+git clone git@github.com:go7th/paper-skill.git
+```
+
+或者用 HTTPS：
+
+```bash
+mkdir -p ~/.claude/skills
+cd ~/.claude/skills
+git clone https://github.com/go7th/paper-skill.git
+```
+
+**项目级安装（只在某个项目里用）**
+
+```bash
+cd 你的项目根目录
+mkdir -p .claude/skills
+cd .claude/skills
+git clone https://github.com/go7th/paper-skill.git
+```
+
+**验证装上了没**
+
+随便打开个 Claude Code 会话，问一句"现在能用的 skill 有哪些"，列表里看到 `paper-skill` 就成了。
+
+或者直接试一下："帮我用 paper-skill 跑一下这份方案"，附上你的方案路径。
+
+**更新**
+
+进 paper-skill 目录跑一下 `git pull` 就行。
+
+---
+
 ## 为啥要做这玩意儿
 
 事情是这样的。
@@ -150,6 +191,20 @@ GitHub 上有个项目叫 [`nicepkg/boss-skill`](https://github.com/nicepkg/boss
 ---
 
 如果这玩意儿帮你过了 review，给个 star 让更多人看见。有 bug、想加新模式、有啥职场 AI 防御新思路，提 Issue 或者 PR 来聊。
+
+---
+
+## 顺便关注一下
+
+平时我会在公众号上聊点 AI、打工人工具、写代码这些有的没的。新 skill、新工具、新工作流的更新也都先发那边。
+
+不想错过的话扫一下：
+
+<p align="center">
+  <img src="assets/wechat-qrcode.jpg" alt="微信公众号" width="240" />
+</p>
+
+扫码关注，下次有新的"打工人 AI 防御工具"，第一时间能看到。
 
 ---
 
